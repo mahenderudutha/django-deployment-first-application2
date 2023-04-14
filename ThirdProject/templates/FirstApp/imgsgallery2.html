@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load static %}   <!-- folder name-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image-Gallery DJango-App</title>
+    <style>
+        body {
+            background-color: lightyellow;
+        }
+        h1{
+            background-color: yellow;
+            text-align: center;
+            color:blue;
+            border:2px Solid Brown;
+        }
+        h4{
+            background-color: lightpink;
+            text-align: center;
+            color:red;
+            width:75%;
+            margin:auto;
+            border:1px Solid Red;
+        }
+
+        #div1{
+            border:2px Solid Gray;
+            width:50%;
+            height:300px;
+        }
+        #div2{
+            border:1px Solid Green;
+            width:20%;
+            height:296px;
+            margin:1px;
+            float:left;
+        }
+        #div3{
+            border:1px Solid Green;
+            width:77.6%;
+            height:296px;
+            margin:1px;
+            float:left;
+        }
+
+        .smallimg{
+            border:1px dotted blue;
+            width:90%;
+            height:48px;
+            margin-top:4px;
+            margin-left:3px;
+            margin-right:3px;
+        }
+        .smallimg:hover{
+            border:1.5px solid blue;
+        }
+       .bigimg{
+            border:1px dotted blue;
+            width:96%;
+            height:288px;
+            margin:4px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id=h11>{{msg1}}</h1>
+    <h4 id=h22>Current Server Date & Time :: {{date1}}</h4>
+    <hr />
+    <div id="div1">
+        <div id="div2">
+            <img class="smallimg" src="{%static 'images/img1.jpg'%}" alt="image1.jpg" />
+            <img class="smallimg" src="{%static 'images/img2.jpg'%}" alt="image2.jpg" />
+            <img class="smallimg" src="{%static 'images/img3.jpg'%}" alt="image3.jpg" />
+            <img class="smallimg" src="{%static 'images/img4.jpg'%}" alt="image4.jpg" />
+            <img class="smallimg" src="{%static 'images/img5.jpg'%}" alt="image5.jpg" />
+        </div>
+        <div id="div3">
+            <img class="bigimg" src="{%static 'images/img1.jpg'%}" alt="image1.jpg" />
+        </div>
+    </div>
+</body>
+</html>

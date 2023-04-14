@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}   <!-- folder name-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Static Files in DJango App</title>
+    <link href="static/css/styles.css" rel="stylesheet" />
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1 id=h11>{{msg1}}</h1>
+    <hr />
+    <h2 id=h22>Current Server Date & Time :: {{date1}}</h2>
+    <hr />
+    <h3>At this time your image is:</h3>
+    <img src="{%static 'images/' %}{{imgs}}" alt="Time-Line-Image" id="img1" />
+</body>
+</html>
+

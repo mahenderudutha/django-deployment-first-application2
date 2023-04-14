@@ -1,0 +1,14 @@
+#h11{
+    color:blue;
+}
+#h22{
+    color:green;
+}
+#img1{
+    width:400px;
+    height:280px;
+    border:10px Groove Red;
+}
+body{
+    background-image: url("../images/bgimage.jpg");
+}
